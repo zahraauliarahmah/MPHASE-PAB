@@ -32,8 +32,6 @@ Selain folder kode program, terdapat juga file .env yang digunakan untuk menyimp
 
 <img width="268" height="40" alt="Image" src="https://github.com/user-attachments/assets/d66e0845-70f2-420e-8e2b-da808ded3631" />
 
-
-
 # Fitur yang digunakan
 
 Aplikasi MPHASE memiliki beberapa fitur utama yang dirancang untuk membantu pengguna dalam mencatat dan memantau siklus menstruasi secara sederhana. Fitur-fitur tersebut meliputi autentikasi pengguna, pencatatan siklus menstruasi, manajemen data, serta pengaturan tampilan aplikasi.
@@ -231,4 +229,127 @@ Navigator digunakan untuk mengatur perpindahan halaman dalam aplikasi, seperti b
 SnackBar digunakan untuk menampilkan notifikasi singkat kepada pengguna, seperti pesan bahwa data berhasil disimpan atau data berhasil dihapus.
 
 # Aplikasi Mphase
+
+## 1. Halaman Login 
+
+Halaman login merupakan halaman yang digunakan oleh pengguna untuk masuk ke dalam aplikasi MPHASE. Pada halaman ini, pengguna yang sudah memiliki akun dapat memasukkan email dan password pada kolom yang tersedia untuk melakukan proses login.
+
+<img width="1912" height="881" alt="Image" src="https://github.com/user-attachments/assets/81dffdb8-396a-4c10-a5fb-d39974485e0f" />
+
+- Tampilan dark mode
+
+<img width="1919" height="885" alt="Image" src="https://github.com/user-attachments/assets/8520a531-1c56-4b50-b6c9-6a5c2d9c7ea9" />
+
+Sedangkan bagi pengguna yang belum memiliki akun, dapat memilih tombol Create Account untuk membuat akun baru terlebih dahulu sebelum dapat menggunakan aplikasi. Selain itu, pada bagian kanan atas juga terdapat ikon untuk mengubah tampilan aplikasi ke mode gelap (dark mode).
+
+## Register 
+
+Halaman Create Account digunakan untuk pengguna yang belum memiliki akun pada aplikasi MPHASE. Pada halaman ini pengguna diminta untuk mengisi beberapa data seperti nama, email, password, umur, panjang siklus menstruasi, serta lama menstruasi.
+
+<img width="1917" height="880" alt="Image" src="https://github.com/user-attachments/assets/d5c9a437-ceae-4ce8-b2ba-f5229513070b" />
+
+- tanggal terakhir haid dipilih secara otomatis
+
+  <img width="1918" height="886" alt="Image" src="https://github.com/user-attachments/assets/7dc8088b-2810-4c92-9c8d-07ee74c52610" />
+
+- tampilan dark mode
+
+<img width="1919" height="889" alt="Image" src="https://github.com/user-attachments/assets/524a17cf-5ab2-407f-873f-5306b58c2038" />
+
+Selain itu, pengguna juga diminta memilih tanggal haid terakhir yang nantinya digunakan sebagai informasi awal untuk membantu mencatat siklus menstruasi. Setelah semua data diisi dengan benar, pengguna dapat menekan tombol Register untuk membuat akun baru dan kemudian dapat menggunakan aplikasi.
+
+<img width="1919" height="66" alt="Image" src="https://github.com/user-attachments/assets/626b4fc6-bf0b-4076-8714-834fd612f99b" />
+
+konfirmasi bahwa akun sudah berhasil dibuat.
+
+jika melakukan regis dengan email yang sudah terdaftar, maka akan muncul notifikasi 
+
+<img width="1919" height="64" alt="Image" src="https://github.com/user-attachments/assets/5ac98b98-0065-4c32-8dbe-f63d26b976ee" />
+
+setelah berhasil membuat akun maka di supabase akan otomatis tersimpan user yang berhasil membuat akun 
+
+<img width="1916" height="379" alt="Image" src="https://github.com/user-attachments/assets/5dcc733f-6a13-4ce0-8415-724157ace0f3" />
+
+## 2. Tampilan Utama
+
+Halaman ini merupakan halaman utama pencatatan siklus menstruasi pada aplikasi MPHASE. Pada bagian ini pengguna dapat melihat daftar catatan siklus menstruasi yang telah dimasukkan. Jika belum ada data yang tersimpan, aplikasi akan menampilkan pesan “Belum ada data siklus” serta ajakan untuk menambahkan catatan period. Pengguna dapat menambahkan data baru dengan menekan tombol tambah (+) yang berada di bagian bawah layar.
+
+<img width="1919" height="877" alt="Image" src="https://github.com/user-attachments/assets/160aac15-be8f-447f-b112-0333aba571d5" />
+
+- Halaman Cycle Form digunakan untuk menambahkan catatan siklus menstruasi. Pengguna dapat memilih tanggal period, memilih hari ke berapa, mengisi gejala secara manual, serta memilih mood yang dirasakan sebelum menyimpan data.
+
+<img width="1919" height="885" alt="Image" src="https://github.com/user-attachments/assets/76b2d73a-5d4a-4c98-9d46-ce5686e3bd6d" />
+
+- Saat tombol Pilih Tanggal ditekan, akan muncul date picker yang memungkinkan pengguna memilih tanggal period secara langsung melalui kalender.
+
+<img width="1919" height="886" alt="Image" src="https://github.com/user-attachments/assets/1db39c18-06dc-4d27-86b2-6fa3b7c18548" />
+
+- Pada bagian Hari, pengguna dapat memilih hari ke berapa dalam siklus menstruasi melalui dropdown, mulai dari Day 1 sampai Day 10.
+
+<img width="1918" height="881" alt="Image" src="https://github.com/user-attachments/assets/87442d9d-4a56-4248-8d33-478a1aa2a3d1" />
+
+- Pada bagian Mood, pengguna dapat memilih kondisi perasaan yang dirasakan seperti Happy, Sad, Moody, Tired, Cramps, Emotional, atau Energetic.
+
+<img width="1919" height="885" alt="Image" src="https://github.com/user-attachments/assets/2e857b4e-fb0f-4ca9-b29a-1387997a5b95" />
+
+- Setelah semua data diisi, seperti tanggal, hari, gejala (ditulis manual), dan mood, pengguna dapat menekan tombol Simpan untuk menyimpan catatan siklus menstruasi ke dalam aplikasi.
+
+<img width="1919" height="888" alt="Image" src="https://github.com/user-attachments/assets/373eddcd-4bd7-41a7-9b9d-3f0b6699d067" />
+
+- setelah menyimpan, maka akan muncul notifikasi
+
+<img width="1919" height="68" alt="Image" src="https://github.com/user-attachments/assets/6a684770-4b2c-47c3-afce-7bd2b059268f" />
+
+## Lihat Data
+
+- Muncul dibagian tampilan utama data yang sudah kita buat tadi
+
+<img width="1919" height="884" alt="Image" src="https://github.com/user-attachments/assets/1cbb4ace-388b-43a5-8d79-3f05e980f460" />
+
+- Secara otomatis maka disupabase akan terlihat dan tersimpan data yang kita buat
+
+<img width="1915" height="387" alt="Image" src="https://github.com/user-attachments/assets/b136a698-fe14-4ad0-bb2a-572d881603cd" />
+
+## Update
+
+Terdapat tanda seperti pensil di bagian ujung data, itu digunakan untuk mengupdate data terbaru atau memperbaiki data jika ada salah atau typo
+
+- before update
+
+<img width="1919" height="884" alt="Image" src="https://github.com/user-attachments/assets/1cbb4ace-388b-43a5-8d79-3f05e980f460" />
+
+- after update
+
+  <img width="1917" height="892" alt="Image" src="https://github.com/user-attachments/assets/039c4493-3f26-4a63-ac91-9fce890cf8cd" />
+
+- di supabase
+
+<img width="1506" height="45" alt="Image" src="https://github.com/user-attachments/assets/2ebfaf23-b336-4268-9ad0-44e414ef6668" />
+
+  ## Delete Data
+
+Terdapat tanda seperti sampah dibagian ujung, digunakan untuk menghapus data
+
+- before delete
+
+  <img width="1917" height="892" alt="Image" src="https://github.com/user-attachments/assets/039c4493-3f26-4a63-ac91-9fce890cf8cd" />
+
+- after delete
+
+<img width="1918" height="894" alt="Image" src="https://github.com/user-attachments/assets/2ef3b978-89b4-4a8a-85e4-2e2d9736f2ce" />
+
+- di supabase
+
+<img width="1919" height="837" alt="Image" src="https://github.com/user-attachments/assets/70ee3230-a002-4380-a4b6-5b21199b066b" />
+
+# Contoh Tampilan Dark Mode
+
+<img width="1919" height="888" alt="Image" src="https://github.com/user-attachments/assets/abd29fc4-f2cc-4bc2-8e96-7bbeb9fcb8c3" />
+
+<img width="1919" height="883" alt="Image" src="https://github.com/user-attachments/assets/ed3672ea-ea48-4154-bd76-66ccfe259c2a" />
+
+# Kesimpulan
+
+Aplikasi MPHASE merupakan aplikasi pencatatan siklus menstruasi sederhana yang dibuat menggunakan Flutter dengan dukungan Supabase sebagai backend dan database. Aplikasi ini memungkinkan pengguna untuk membuat akun, melakukan login, serta mencatat informasi siklus menstruasi seperti tanggal period, hari ke berapa, gejala yang dirasakan, dan mood harian. Dengan fitur tambah, edit, dan hapus data, pengguna dapat mengelola catatan siklus menstruasi dengan lebih mudah. Melalui aplikasi ini diharapkan pengguna dapat lebih memahami kondisi tubuh dan memantau siklus menstruasi secara sederhana dan terstruktur.
+
 
