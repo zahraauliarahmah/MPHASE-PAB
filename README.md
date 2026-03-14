@@ -282,11 +282,11 @@ Halaman ini merupakan halaman utama pencatatan siklus menstruasi pada aplikasi M
 
 - Saat tombol Pilih Tanggal ditekan, akan muncul date picker yang memungkinkan pengguna memilih tanggal period secara langsung melalui kalender.
 
-<img width="1919" height="886" alt="Image" src="https://github.com/user-attachments/assets/1db39c18-06dc-4d27-86b2-6fa3b7c18548" />
+<img width="1918" height="881" alt="Image" src="https://github.com/user-attachments/assets/87442d9d-4a56-4248-8d33-478a1aa2a3d1" />
 
 - Pada bagian Hari, pengguna dapat memilih hari ke berapa dalam siklus menstruasi melalui dropdown, mulai dari Day 1 sampai Day 10.
 
-<img width="1918" height="881" alt="Image" src="https://github.com/user-attachments/assets/87442d9d-4a56-4248-8d33-478a1aa2a3d1" />
+<img width="1919" height="886" alt="Image" src="https://github.com/user-attachments/assets/1db39c18-06dc-4d27-86b2-6fa3b7c18548" />
 
 - Pada bagian Mood, pengguna dapat memilih kondisi perasaan yang dirasakan seperti Happy, Sad, Moody, Tired, Cramps, Emotional, atau Energetic.
 
